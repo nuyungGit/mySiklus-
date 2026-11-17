@@ -205,7 +205,7 @@ class DashboardScreen extends ConsumerWidget {
                                 onConfirm: () => cycleNotifier.startHaid(),
                               ),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: AppColors.dustyRose,
+                        backgroundColor: AppColors.sageGreen,
                         foregroundColor: Colors.white,
                         disabledBackgroundColor: AppColors.border,
                         disabledForegroundColor: AppColors.textMuted,

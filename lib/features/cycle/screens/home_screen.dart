@@ -607,9 +607,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                       }
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: isCurrentlyHaid
-                          ? AppColors.sageGreen
-                          : AppColors.dustyRose,
+                      backgroundColor: AppColors.sageGreen,
                       foregroundColor: Colors.white,
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       elevation: 2,
@@ -1035,6 +1033,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
               // ==========================================
               Container(
                 decoration: BoxDecoration(
+                  color: isHaid ? const Color(0xFF8C5B66) : AppColors.sageGreen,
                   borderRadius: BorderRadius.circular(22),
                   boxShadow: [
                     BoxShadow(
@@ -1057,19 +1056,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                     child: Ink(
                       height: 60,
                       decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: isHaid
-                              ? [
-                                  const Color(0xFFB5838D),
-                                  const Color(0xFF8C5B66),
-                                ]
-                              : [
-                                  const Color(0xFFE5989B),
-                                  const Color(0xFFB5838D),
-                                ],
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
-                        ),
+                        color: isHaid ? const Color(0xFF8C5B66) : AppColors.sageGreen,
                         borderRadius: BorderRadius.circular(22),
                       ),
                       child: Row(

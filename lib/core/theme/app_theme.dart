@@ -10,7 +10,7 @@ class AppTheme {
 
     return ThemeData(
       useMaterial3: true,
-      scaffoldBackgroundColor: const Color(0xFFFFF5F8),
+      scaffoldBackgroundColor: const Color(0xFFF4F3F6),
       colorScheme: const ColorScheme.light(
         primary: Color(0xFFB5838D),
         onPrimary: Colors.white,
